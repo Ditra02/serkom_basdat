@@ -1,0 +1,101 @@
+/* Reset dasar */
+body,
+h1,
+p,
+div,
+button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaeaea;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #007bff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.title {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.right-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-button {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    opacity: 0.8;
+}
+
+.register-button {
+    background-color: yellow;
+    color: black;
+}
+
+.login-button {
+    background-color: green;
+    color: white;
+}
+
+/* Layout utama */
+.main-container {
+    display: flex;
+    margin: 20px;
+}
+
+/* Sidebar kiri */
+.sidebar {
+    background-color: #f0f0f0;
+    width: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar-button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+}
+
+.sidebar-button:hover {
+    background-color: #ddd;
+}
+
+/* Konten utama */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+}
